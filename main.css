@@ -1,0 +1,241 @@
+*{
+    font-family: toppan-bunkyu-mincho-pr6n, serif;
+    color: #707070;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+body{
+    background-color: #FFFEF8;
+}
+.header_img{
+    position: absolute;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.maintitle{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.maintitle img{
+    width: 10vw;
+    height: auto;
+    
+}
+ul.header-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    right: -10vh;
+}
+ul.header-menu li{
+    margin-right: 3em;
+}
+ul.header-menu a{
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+    width: calc(100vh/5);
+}
+ul.header-menu a::after{
+    content: '';
+	width: 0;
+	transition: all 0.5s;
+	border-bottom: 3px solid #707070;
+	display: block;
+}
+ul.header-menu a:hover::after{
+    width: 70%;
+	border-bottom: 3px solid #707070;
+}
+.body_title{
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+.left-title{
+    width: calc(100vw/3);
+    line-height: 2.5em;
+    margin-left: 5em;
+    margin-right: -5em;
+}
+.middle-title{
+    width: calc(100vw/3);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.line{
+    border: 1px solid #707070;
+    background-color: #707070;
+    width: 0.5px;
+    height: 8em;
+}
+.right-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw/3);
+    height: auto;
+}
+.right-title a{
+    margin-right: -15vw;
+}
+a.my-example{
+    transition: .5s;
+}
+.my-example:hover{
+    color: #707070;
+    transition: .5s
+}
+.About{
+    text-align: center;
+    width: calc(100vw/5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5em;
+    margin: 0 auto;
+}
+.circle1{
+    position: absolute;
+    margin-top: 2em;
+    width: 10vw;
+    height: 40vh;
+    border-radius: 0 100% 100% 0% / 50%;
+    border:1px solid #FFF3DB;
+    background-color: #FFF3DB;
+    z-index: 5;
+    
+}
+.circle2{
+    position: absolute;
+    margin-top: 15em;
+    width: 18vw;
+    height: 60vh;
+    border-radius: 0 100% 100% 0% / 50%;
+    border:1px solid #FFEDDB;
+    background-color: #FFEDDB;
+ 
+    z-index: 1;
+}
+.circle3{
+    display: block;
+    margin: 0em 0 0 auto;
+    width: 18vw;
+    height: 64vh;
+    border-radius: 100% 0% 0% 100% / 50%;
+    border:1px solid #FFDBDB;
+    background-color: #FFDBDB;
+    z-index: 1;
+}
+.circle4{
+    margin-top: 30em;
+    margin: 0em 0 0 auto;
+    width: 10vw;
+    height: 19vh;
+    border-radius: 50%;
+    border:1px solid #FFDBEA;
+    background-color: #FFDBEA;
+    z-index: 1;
+}
+.circle5{
+    position: absolute;
+    width: 18vw;
+    height: 34vh;
+    border-radius: 50%;
+    border:1px solid #FFDBDB;
+    background-color: #FFDBDB;
+    z-index: 1;
+}
+
+.About h1{
+    margin-right: 1em;
+}
+.About h2{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    margin-right: 3em;
+}
+.About p{
+    text-align: center;
+}
+.height{
+    height: 20em;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact{
+    text-align: center;
+    line-height: 5em;
+}
+.SNS{
+    text-align: center;
+    display: flex;
+}
+.SNS1{
+    width: calc(100vw/3);
+    height: auto;
+    margin-right: 3em;
+    margin-left: 3em; 
+}
+.twitter-timeline{
+    height: 0%;
+}
+.SNS h3{
+    font-size: 3vw;
+}
+.adimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #707070;
+}
+
+/* introduction_css */
+
+header.intro_header{
+    margin-bottom: 5em;
+}
+.bigtitle{
+    text-align: center;
+}
+.imgcircle{
+    border: 2px solid #707070;
+    border-radius: 50%;
+    width: 10vw;
+    height: 19vh;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.over,.middle,.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40vw;
+    height: 40vh;
+}
