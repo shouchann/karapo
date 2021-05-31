@@ -115,6 +115,7 @@ ul.header-menu a:hover::after{
     justify-content: center;
     width: calc(100vw/3);
     height: auto;
+    margin-right: -5em;
 }
 .right-title a{
     margin-top: 1em;
@@ -239,6 +240,9 @@ a.my-example{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+#about_button{
+    width: 40%;
 }
 p.txt-show{
     width: 100%;
