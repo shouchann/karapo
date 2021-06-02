@@ -243,7 +243,7 @@ a.my-example{
     flex-direction: column;
 }
 #about_button{
-    width: 40%;
+    width: 28%;
 }
 p.txt-show{
     width: 100%;
@@ -251,7 +251,7 @@ p.txt-show{
 /* more */
 a.button{
 	box-sizing: border-box;
-	width: 20%;
+	width: 12%;
     margin: 0 auto;
 	padding: 4px;
 	list-style: none;
@@ -294,7 +294,7 @@ a.button:hover::after{
 a.button.close{
     margin: 0 auto;
     text-align: center;
-    width: 20%;
+    width: 12%;
 }
 
 .height{
