@@ -119,17 +119,17 @@ ul.header-menu a:hover::after{
     margin-right: 2em;
 }
 .right-title a{
-    margin-top: 1em;
+    position: relative;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    border: 2px solid;
     justify-content: center;
     text-align: center;
-    width: 5vw;
-    height: 10vh;
     margin-right: 0;
-    border: 2px solid;
 }
 .right-title i{
-    margin-top: 0.2em;
+    margin-top: 0.3em;
 }
 a.my-example{
     transition: .5s;
