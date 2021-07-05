@@ -231,70 +231,6 @@ a.my-example{
     right: 40%;
     left: -35%;
 }
-/* .About > .content > a.button{
-    text-align: center;
-    margin: 0 auto;
-}
-.content{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#about_button{
-    width: 28%;
-}
-
-/* more */
-/* a.button{
-	box-sizing: border-box;
-	width: 12%;
-    margin: 0 auto;
-	padding: 4px;
-	list-style: none;
-	text-align: center;
-    text-decoration: none;
-	padding-bottom: 3px;
-	color: #444;
-	display: inline-block;
-	position: relative;
-}
-a.button::before{
-    content: '';
-	width: 0;
-	left: 50%;
-	bottom: 0;
-	transition: all 0.3s ease;
-	border-bottom: 3px solid #444;
-	position: absolute;
-	display: block;
-}
-a.button:hover::before{
-    width: 50%;
-	border-bottom: 3px solid #444;
-}
-a.button::after{
-    content: '';
-	width: 0;
-	right: 50%;
-	bottom: 0;
-	transition: all 0.3s ease;
-	border-bottom: 3px solid #444;
-	position: absolute;
-	display: block;
-}
-a.button:hover::after{
-    width: 50%;
-	border-bottom: 3px solid #444;
-}
-
-a.button.close{
-    margin: 0 auto;
-    text-align: center;
-    width: 12%;
-} */ 
-
 
 span.grad-trigger{
     font-family: toppan-bunkyu-mincho-pr6n, serif;
@@ -309,20 +245,20 @@ span.grad-trigger{
    text-align: center;
    margin: 0 auto;
   }
-  .grad-trigger::after {
-    content: "続きを読む" /*クリック前のボタンのラベル*/
-  }
-  .grad-trigger .fa {
+.grad-trigger::after {
+    content: "Open" /*クリック前のボタンのラベル*/
+}
+.grad-trigger .fa {
     margin-right: .5em;
-  }
-  .grad-item {
+}
+.grad-item {
     position: relative;
     overflow: hidden;
-  }
-  .grad-item.is-hide {
+}
+.grad-item.is-hide {
     height: 80px; /*隠した後の高さ*/
-  }
-  .grad-item::before {
+}
+.grad-item::before {
     display: block;
     position: absolute;
     bottom: 0;
@@ -330,18 +266,18 @@ span.grad-trigger{
     content: "";
     width: 100%;
     height: 40px; /*グラデーションで隠す高さ*/
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
-    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
-  }
-  .grad-trigger.is-show {
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #FFFEF8 50%, #FFFEF8 50%, #FFFEF8 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, #FFFEF8 50%, #FFFEF8 50%, #FFFEF8 100%);
+}
+.grad-trigger.is-show {
     bottom: -2em;
-  }
-  .grad-trigger.is-show::after {
-    content: "閉じる" /*クリック後にボタンのラベルを変える*/
-  }
-  .grad-trigger.is-show + .grad-item::before {
+}
+.grad-trigger.is-show::after {
+    content: "Close" /*クリック後にボタンのラベルを変える*/
+}
+.grad-trigger.is-show + .grad-item::before {
     display: none;
-  }
+}
 
 
 .height{

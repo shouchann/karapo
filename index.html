@@ -61,10 +61,11 @@
     <div class="About" id="2">
         <h1>About</h1>
         <h2>同世代の領域。</h2>
-        <p>あああああああああああああああああ</p>
-        <div class="content">
-            <p>ああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            <a class="button" id="about_button">more</a>
+        <div class="grad-wrap">
+            <span class="grad-trigger"></span>
+            <div class="grad-item">
+                <p>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+            </div>
         </div>
     </div>
     <div class="circle3"></div>
@@ -79,14 +80,14 @@
                     <div class="grad-wrap">
                         <span class="grad-trigger"></span>
                         <div class="grad-item">
-                                <p>年齢：22歳<br>
-                                    趣味：野球 / 音楽鑑賞 / テレビゲーム<br>
-                                    初めまして。南條翔希です。私も中学１年生の冬から中学３年生の約２年半もの間、不登校でした。
-                                そのため、中学校での友人や知り合いに会うのが気まずく、家に篭り１日中ゲームに熱中し、人生に楽しみも希望もありませんでした。
-                                しかし、不登校のカウンセリングを受けた事で高校にも行けるようになりました。
-                                今では、自分のやりたい事や人生の楽しさや希望を見出し楽しい人生を送っています。
-                                自分の経験を生かし、お子様そして親御様のサポートをさせていただきます。 </p>
-                            </div>
+                            <p>年齢：22歳<br>
+                            趣味：野球 / 音楽鑑賞 / テレビゲーム<br>
+                            初めまして。南條翔希です。私も中学１年生の冬から中学３年生の約２年半もの間、不登校でした。
+                            そのため、中学校での友人や知り合いに会うのが気まずく、家に篭り１日中ゲームに熱中し、人生に楽しみも希望もありませんでした。
+                            しかし、不登校のカウンセリングを受けた事で高校にも行けるようになりました。
+                            今では、自分のやりたい事や人生の楽しさや希望を見出し楽しい人生を送っています。
+                            自分の経験を生かし、お子様そして親御様のサポートをさせていただきます。 </p>
+                        </div>
                     </div>
                     </div>
                     <div class="block">
@@ -98,8 +99,8 @@
                                     <p>年齢：18歳<br>
                                         趣味：サッカー / バスケ / 読書 / 人間観察 / ゲーム<br>
                                         初めまして長尾樹です！私は中学2年生から高校1年生の秋の約2年半不登校でした。
-                                    なので不登校の人の気持ちがよくわかります！
-                                    お子様のことで悩んでいる親御様や自分のことを理解してほしいという方はぜひ声を掛けてください！</p>
+                                        なので不登校の人の気持ちがよくわかります！
+                                        お子様のことで悩んでいる親御様や自分のことを理解してほしいという方はぜひ声を掛けてください！</p>
                                     
                                 </div>
                         </div>
@@ -180,33 +181,31 @@
 
     <script>
         var itemHeights = [];
-var returnHeight;
-
-$(function(){
-  $(".grad-item").each(function(){ //ターゲット(縮めるアイテム)
-    var thisHeight = $(this).height(); //ターゲットの高さを取得
-    itemHeights.push(thisHeight); //それぞれの高さを配列に入れる
-    $(this).addClass("is-hide"); //CSSで指定した高さにする
-    returnHeight = $(this).height(); //is-hideの高さを取得
-  });
-});
-
-$(".grad-trigger").click(function(){ //トリガーをクリックしたら
-  if(!$(this).hasClass("is-show")) {
-    var index = $(this).index(".grad-trigger"); //トリガーが何個目か
-    var addHeight = itemHeights[index]; //個数に対応する高さを取得
-    $(this).addClass("is-show").next().animate({height: addHeight},200).removeClass("is-hide"); //高さを元に戻す
-  } else {
-    $(this).removeClass("is-show").next().animate({height: returnHeight},200).addClass("is-hide"); //高さを制限する
-  }
-});
+        var returnHeight;
+        $(function(){
+        $(".grad-item").each(function(){ //ターゲット(縮めるアイテム)
+            var thisHeight = $(this).height(); //ターゲットの高さを取得
+            itemHeights.push(thisHeight); //それぞれの高さを配列に入れる
+            $(this).addClass("is-hide"); //CSSで指定した高さにする
+            returnHeight = $(this).height(); //is-hideの高さを取得
+        });
+        });
+        $(".grad-trigger").click(function(){ //トリガーをクリックしたら
+        if(!$(this).hasClass("is-show")) {
+            var index = $(this).index(".grad-trigger"); //トリガーが何個目か
+            var addHeight = itemHeights[index]; //個数に対応する高さを取得
+            $(this).addClass("is-show").next().animate({height: addHeight},200).removeClass("is-hide"); //高さを元に戻す
+        } else {
+            $(this).removeClass("is-show").next().animate({height: returnHeight},200).addClass("is-hide"); //高さを制限する
+        }
+        });
     </script>
 </body>
 <footer>
     <div class="contact" id="4">
         <h1>お問い合わせ</h1>
         <h2>000-0000-0000</h2>
-        <h2>○○○○○@gmail.com</h2>
+        <h2>karapoofficial@gmail.com</h2>
         <p>&copy;からっぽ</p>
     </div>
 </footer>
