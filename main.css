@@ -237,6 +237,8 @@ span.grad-trigger{
 }
 .grad-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
   .grad-wrap + .grad-wrap {
     margin-top: 40px;
@@ -244,6 +246,7 @@ span.grad-trigger{
   .grad-trigger {
    text-align: center;
    margin: 0 auto;
+   order: 2;
   }
 .grad-trigger::after {
     content: "Open" /*クリック前のボタンのラベル*/
@@ -254,6 +257,7 @@ span.grad-trigger{
 .grad-item {
     position: relative;
     overflow: hidden;
+    order: 1;
 }
 .grad-item.is-hide {
     height: 80px; /*隠した後の高さ*/
