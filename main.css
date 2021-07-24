@@ -207,7 +207,7 @@ a.my-example{
 }
 .About{
     text-align: center;
-    width: calc(100vw/5);
+    width: calc(100vw/3);
     font-size: 1.8vw;
     display: flex;
     flex-direction: column;
@@ -225,11 +225,16 @@ a.my-example{
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     font-size: 2.5vw;
+    margin-right: 4em;
 }
 .About h1,.About h2{
     position: relative;
     right: 40%;
-    left: -35%;
+    left: -13%;
+}
+
+.About p{
+    width: 100%;
 }
 
 span.grad-trigger{
