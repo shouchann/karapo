@@ -319,9 +319,7 @@ span.grad-trigger{
 
 /* introduction_css */
 
-header.intro_header{
-    margin-bottom: 5em;
-}
+
 .bigtitle h1{
     text-align: center;
     font-size: 3.4vw;
@@ -333,6 +331,7 @@ header.intro_header{
     object-fit: cover;
 }
 .introduction{
+    margin-top: -25em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,6 +350,7 @@ header.intro_header{
     margin-top: -10em;
 }
 .menber{
+    
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -379,6 +379,8 @@ header.intro_header{
 }
 
 .contact{
+    position: relative;
+    bottom: 0;
     text-align: center;
     line-height: 5em;
     display: flex;
